@@ -81,7 +81,7 @@ l'heure UTC. Les constantes `rotationWildMax`, `rotationDungeonMax`,
 
 - **VS** : les dresseurs `type: "vs"` forment une échelle. Seul le premier non
   battu, **dans l'ordre de déclaration du fichier**, est jouable. Le dernier
-  actuel est `vsPokemonProfessorOak` (niveau 150). Ajouter un dresseur après lui
+  actuel est `vsShadowTrainerFinal` (Ligue des Légendes, ajoutée en v5.2). Ajouter un dresseur après lui
   crée automatiquement un nouveau palier.
 - **Déblocages** : les zones `wild` de niveau 30, 50 et 70 se débloquent avec
   Brock, Misty et Phoebe (boucle en fin de `areasDictionary.js`). Ailleurs, on
@@ -245,7 +245,7 @@ sauvegarde.
 
 ### Un dresseur VS (nouveau palier de progression)
 
-Ajouter un `areas.vsXxx` **après** `vsPokemonProfessorOak` :
+Ajouter un `areas.vsXxx` **après** le dernier dresseur VS (`vsShadowTrainerFinal` en v5.2) :
 
 ```js
 areas.vsMonDresseur = {

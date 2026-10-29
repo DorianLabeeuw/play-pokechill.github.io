@@ -5188,6 +5188,230 @@ areas.vsPokemonProfessorOak = {
 
 
 
+//fork content v5.2 - Legends League (post Professor Oak)
+
+areas.vsChampionLeon = {
+    name: `Champion Leon`,
+    background : `gym`,
+    sprite : `leon`,
+    difficulty : 27,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.aegislash,
+        slot1Moves : [move.kingsShield.id, move.shadowBall.id, move.flashCannon.id, move.swordsDance.id],
+        slot2 : pkmn.dragapult,
+        slot2Moves : [move.dragonDarts.id, move.phantomForce.id, move.uTurn.id, move.dragonDance.id],
+        slot3 : pkmn.rillaboomGmax,
+        slot3Moves : [move.drumBeating.id, move.grassyTerrain.id, move.knockOff.id, move.highHorsepower.id],
+        slot4 : pkmn.inteleonGmax,
+        slot4Moves : [move.snipeShot.id, move.iceBeam.id, move.darkPulse.id, move.rainDance.id],
+        slot5 : pkmn.cinderaceGmax,
+        slot5Moves : [move.pyroBall.id, move.highHorsepower.id, move.uTurn.id, move.bulkUp.id],
+        slot6 : pkmn.charizardGmax,
+        slot6Moves : [move.sunnyDay.id, move.fireBlast.id, move.airShlash.id, move.dragonPulse.id],
+    },
+    fieldEffect : [field.harshSun.id, field.stealthRocks.id],
+    reward : [pkmn.zacian, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsChampionDiantha = {
+    name: `Champion Diantha`,
+    background : `gym`,
+    sprite : `diantha`,
+    difficulty : 28,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.hawlucha,
+        slot1Moves : [move.flyingPress.id, move.swordsDance.id, move.acrobatics.id, move.closeCombat.id],
+        slot2 : pkmn.tyrantrum,
+        slot2Moves : [move.headCharge.id, move.dragonClaw.id, move.stoneEdge.id, move.dragonDance.id],
+        slot3 : pkmn.aurorus,
+        slot3Moves : [move.freezeDry.id, move.meteorBeam.id, move.hail.id, move.earthPower.id],
+        slot4 : pkmn.goodra,
+        slot4Moves : [move.dracoMeteor.id, move.sludgeWave.id, move.fireBlast.id, move.thunderbolt.id],
+        slot5 : pkmn.megaDiancie,
+        slot5Moves : [move.powerGem.id, move.moonblast.id, move.rockPolish.id, move.earthPower.id],
+        slot6 : pkmn.megaGardevoir,
+        slot6Moves : [move.calmMind.id, move.moonblast.id, move.psychic.id, move.mysticalFire.id],
+    },
+    fieldEffect : [field.mistyField.id, field.fatiguingCurse.id],
+    reward : [pkmn.xerneas, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsChampionIris = {
+    name: `Champion Iris`,
+    background : `gym`,
+    sprite : `iris`,
+    difficulty : 29,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.archeops,
+        slot1Moves : [move.accelerock.id, move.acrobatics.id, move.stoneEdge.id, move.dragonClaw.id],
+        slot2 : pkmn.lapras,
+        slot2Moves : [move.freezeDry.id, move.surf.id, move.thunderbolt.id, move.hail.id],
+        slot3 : pkmn.megaAggron,
+        slot3Moves : [move.ironDefense.id, move.ironHead.id, move.bodyPress.id, move.earthquake.id],
+        slot4 : pkmn.druddigon,
+        slot4Moves : [move.outrage.id, move.firePunch.id, move.knockOff.id, move.honeClaws.id],
+        slot5 : pkmn.hydreigon,
+        slot5Moves : [move.nastyPlot.id, move.darkPulse.id, move.dracoMeteor.id, move.flamethrower.id],
+        slot6 : pkmn.haxorus,
+        slot6Moves : [move.dragonDance.id, move.outrage.id, move.earthquake.id, move.closeCombat.id],
+    },
+    fieldEffect : [field.weakeningCurse.id, field.deltaStream.id],
+    reward : [pkmn.zekrom, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsChampionKieran = {
+    name: `Champion Kieran`,
+    background : `gym`,
+    sprite : `kieran`,
+    difficulty : 30,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.incineroar,
+        slot1Moves : [move.darkestLariat.id, move.flareBlitz.id, move.knockOff.id, move.bulkUp.id],
+        slot2 : pkmn.kingambit,
+        slot2Moves : [move.swordsDance.id, move.ironHead.id, move.knockOff.id, move.ruination.id],
+        slot3 : pkmn.hydrapple,
+        slot3Moves : [move.dracoMeteor.id, move.appleAcid.id, move.earthPower.id, move.energyBall.id],
+        slot4 : pkmn.dragonite,
+        slot4Moves : [move.dragonDance.id, move.extremeSpeed.id, move.outrage.id, move.earthquake.id],
+        slot5 : pkmn.ogerponHearthflame,
+        slot5Moves : [move.leafBlade.id, move.flareBlitz.id, move.swordsDance.id, move.knockOff.id],
+        slot6 : pkmn.terapagosTerastal,
+        slot6Moves : [move.calmMind.id, move.triAttack.id, move.earthPower.id, move.dazzlingGleam.id],
+    },
+    fieldEffect : [field.trickField.id, field.unnerve.id],
+    reward : [pkmn.terapagos, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsSubwayBossIngo = {
+    name: `Subway Boss Ingo`,
+    background : `gym`,
+    sprite : `ingo`,
+    difficulty : 31,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.megaExcadrill,
+        slot1Moves : [move.sandstorm.id, move.earthquake.id, move.ironHead.id, move.rockSlide.id],
+        slot2 : pkmn.megaEelektross,
+        slot2Moves : [move.thunderbolt.id, move.flamethrower.id, move.knockOff.id, move.coil.id],
+        slot3 : pkmn.megaChandelure,
+        slot3Moves : [move.shadowBall.id, move.overheat.id, move.energyBall.id, move.trickRoom.id],
+        slot4 : pkmn.metagross,
+        slot4Moves : [move.bulletPunch.id, move.zenHeadbut.id, move.earthquake.id, move.agility.id],
+        slot5 : pkmn.megaMetagross,
+        slot5Moves : [move.agility.id, move.ironHead.id, move.psychicFangs.id, move.icePunch.id],
+        slot6 : pkmn.dialgaOrigin,
+        slot6Moves : [move.roarOfTime.id, move.flashCannon.id, move.earthPower.id, move.trickRoom.id],
+    },
+    fieldEffect : [field.averageTime.id, field.stealthRocks.id, field.ironBody.id],
+    reward : [pkmn.dialga, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsStarCaptainPenny = {
+    name: `Star Captain Penny`,
+    background : `gym`,
+    sprite : `penny`,
+    difficulty : 32,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.jolteon,
+        slot1Moves : [move.voltSwitch.id, move.thunderbolt.id, move.shadowBall.id, move.electricTerrain.id],
+        slot2 : pkmn.vaporeon,
+        slot2Moves : [move.rainDance.id, move.scald.id, move.iceBeam.id, move.acidArmor.id],
+        slot3 : pkmn.umbreon,
+        slot3Moves : [move.darkPulse.id, move.toxic.id, move.willOWisp.id, move.snarl.id],
+        slot4 : pkmn.espeon,
+        slot4Moves : [move.calmMind.id, move.psychic.id, move.dazzlingGleam.id, move.shadowBall.id],
+        slot5 : pkmn.sylveon,
+        slot5Moves : [move.hyperVoice.id, move.moonblast.id, move.calmMind.id, move.mysticalFire.id],
+        slot6 : pkmn.eeveeGmax,
+        slot6Moves : [move.batonPass.id, move.extremeSpeed.id, move.bodyPress.id, move.bellyDrum.id],
+    },
+    fieldEffect : [field.neutralisingGas.id, field.wonderWard.id],
+    reward : [pkmn.magearna, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsGymLeaderSabrinaRematch = {
+    name: `Psychic Master Sabrina`,
+    background : `gym`,
+    sprite : `sabrina`,
+    difficulty : 33,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.hatterene,
+        slot1Moves : [move.trickRoom.id, move.psychic.id, move.mysticalFire.id, move.dazzlingGleam.id],
+        slot2 : pkmn.slowking,
+        slot2Moves : [move.calmMind.id, move.scald.id, move.psychic.id, move.fireBlast.id],
+        slot3 : pkmn.espathra,
+        slot3Moves : [move.luminaCrash.id, move.storedPower.id, move.calmMind.id, move.dazzlingGleam.id],
+        slot4 : pkmn.megaGengar,
+        slot4Moves : [move.shadowBall.id, move.sludgeWave.id, move.focusBlast.id, move.nastyPlot.id],
+        slot5 : pkmn.megaAlakazam,
+        slot5Moves : [move.psychic.id, move.shadowBall.id, move.focusBlast.id, move.calmMind.id],
+        slot6 : pkmn.deoxysAttack,
+        slot6Moves : [move.psychoBoost.id, move.superpower.id, move.extremeSpeed.id, move.darkPulse.id],
+    },
+    fieldEffect : [field.reverseField.id, field.thickFog.id, field.noMercy.id],
+    reward : [pkmn.deoxys, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsShadowTrainerFinal = {
+    name: `??? Shadow Trainer`,
+    background : `night`,
+    sprite : `shadow`,
+    difficulty : 35,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.megaTyranitar,
+        slot1Moves : [move.sandstorm.id, move.stoneEdge.id, move.crunch.id, move.earthquake.id],
+        slot2 : pkmn.megaLucario,
+        slot2Moves : [move.swordsDance.id, move.closeCombat.id, move.bulletPunch.id, move.extremeSpeed.id],
+        slot3 : pkmn.kyurem,
+        slot3Moves : [move.glaciate.id, move.freezeDry.id, move.dracoMeteor.id, move.earthPower.id],
+        slot4 : pkmn.megaRayquaza,
+        slot4Moves : [move.dragonAscent.id, move.extremeSpeed.id, move.dragonDance.id, move.earthquake.id],
+        slot5 : pkmn.megaMewtwoX,
+        slot5Moves : [move.bulkUp.id, move.zenHeadbut.id, move.closeCombat.id, move.iceBeam.id],
+        slot6 : pkmn.megaMewtwoY,
+        slot6Moves : [move.calmMind.id, move.psychoBoost.id, move.auraSphere.id, move.shadowBall.id],
+    },
+    fieldEffect : [field.noMercy.id, field.wonderWard.id, field.stealthRocks.id, field.deltaStream.id],
+    itemReward: { 1 : { item: item.autoRefightTicket.id, amount: 3 }, 2 : { item: item.goldenBottleCap.id, amount: 30 }},
+    reward : [pkmn.mewtwo],
+    encounterEffect: function() {
+        document.getElementById("tooltipTop").style.display = `none`
+        document.getElementById("tooltipTitle").innerHTML = `Legends League cleared!`
+        document.getElementById("tooltipBottom").style.display = `none`
+        document.getElementById("tooltipMid").innerHTML = `
+        <div class="genetics-overview-tags" >
+        <div style="filter:hue-rotate(0deg)" >The shadow fades... but other legends still await</div>
+        </div>
+        `
+        openTooltip()
+    }
+}
+
+
+
 
 
 
