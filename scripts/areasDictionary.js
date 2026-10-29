@@ -8224,6 +8224,36 @@ season.halloween = {
     name: `Hallowed Gala`,
 }
 
+season.frostlight = {
+    background: `snow`,
+    icon: pkmn.delibird,
+    hue: 190,
+    svg: `<svg class="frontier-flair" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M12 2v20M3.34 7l17.32 10M3.34 17L20.66 7M9.5 3.5L12 6l2.5-2.5m-5 17L12 18l2.5 2.5"/></svg>`,
+    start: { month: 12, day: 18 },
+    end: { month: 1, day: 3 },
+    name: `Frostlight Festival`,
+}
+
+season.blossom = {
+    background: `forest`,
+    icon: pkmn.comfey,
+    hue: 300,
+    svg: `<svg class="frontier-flair" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="2.5"/><path d="M12 9.5C10 6 10.5 3 12 2c1.5 1 2 4 0 7.5m2.4 1.7c3.9-1 6.6.3 7.1 2.1c-.8 1.6-3.7 2.6-7.1 1.1M13.5 14.5c1.4 3.8.6 6.7-1.2 7.5c-1.7-.7-2.6-3.6-.3-7.5m-1.6-.4c-3.9 1-6.6-.3-7.1-2.1c.8-1.6 3.7-2.6 7.1-1.1"/></g></svg>`,
+    start: { month: 4, day: 1 },
+    end: { month: 4, day: 14 },
+    name: `Blossom Fair`,
+}
+
+season.summerTide = {
+    background: `beach`,
+    icon: pkmn.wingull,
+    hue: 40,
+    svg: `<svg class="frontier-flair" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></g></svg>`,
+    start: { month: 7, day: 15 },
+    end: { month: 7, day: 28 },
+    name: `Summer Tide Festival`,
+}
+
 for (const i in season){
     season[i].id = i
 }
@@ -8268,6 +8298,128 @@ areas.seasonMarshadow = {
         slot1Moves : [move.powerupPunch.id,move.shadowPunch.id, move.machPunk.id, move.bulletPunch.id],
     },  
     reward : [pkmn.marshadow],
+}
+
+
+//fork content v5.5 - new seasonal events
+
+areas.frostlightVillage = {
+    season : season.frostlight.id,
+    level : wildAreaLevel1,
+    type: `season`,
+    background : `snow`,
+    icon: pkmn.delibird,
+    spawns: {
+        common : [pkmn.snorunt, pkmn.spheal, pkmn.cubchoo],
+        uncommon : [pkmn.delibird],
+        rare : [pkmn.castformSnowy]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        uncommon : [item.oldGateau],
+    }
+}
+
+areas.seasonCalyrexIce = {
+    season : season.frostlight.id,
+    type: `season`,
+    timed: 60,
+    hpPercentage:100,
+    name: `Frozen Encounter`,
+    background : `snow`,
+    icon: pkmn.calyrexIce,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.oldGateau.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/oldGateau.png"> Old Gateau to enter`,
+    unlockRequirement : function() { return item.oldGateau.got>2 },
+    level : 90,
+    team : {
+        slot1 : pkmn.calyrexIce,
+        slot1Moves : [move.iceHammer.id, move.psychic.id, move.highHorsepower.id, move.closeCombat.id],
+    },  
+    reward : [pkmn.calyrexIce],
+}
+
+
+areas.blossomGarden = {
+    season : season.blossom.id,
+    level : wildAreaLevel1,
+    type: `season`,
+    background : `forest`,
+    icon: pkmn.comfey,
+    spawns: {
+        common : [pkmn.cherubi, pkmn.flabebe, pkmn.hoppip],
+        uncommon : [pkmn.comfey],
+        rare : [pkmn.cherrimSunshine]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        uncommon : [item.oldGateau],
+    }
+}
+
+areas.seasonShayminSky = {
+    season : season.blossom.id,
+    type: `season`,
+    timed: 60,
+    hpPercentage:100,
+    name: `Blooming Encounter`,
+    background : `forest`,
+    icon: pkmn.shayminSky,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.oldGateau.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/oldGateau.png"> Old Gateau to enter`,
+    unlockRequirement : function() { return item.oldGateau.got>2 },
+    level : 90,
+    team : {
+        slot1 : pkmn.shayminSky,
+        slot1Moves : [move.seedFlare.id, move.airShlash.id, move.energyBall.id, move.earthPower.id],
+    },  
+    reward : [pkmn.shayminSky],
+}
+
+
+areas.summerShore = {
+    season : season.summerTide.id,
+    level : wildAreaLevel1,
+    type: `season`,
+    background : `beach`,
+    icon: pkmn.wingull,
+    spawns: {
+        common : [pkmn.wingull, pkmn.corphish, pkmn.finneon],
+        uncommon : [pkmn.lapras],
+        rare : [pkmn.wishiwashiSchool]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        uncommon : [item.oldGateau],
+    }
+}
+
+areas.seasonKyogrePrimal = {
+    season : season.summerTide.id,
+    type: `season`,
+    timed: 60,
+    hpPercentage:100,
+    name: `Tidal Encounter`,
+    background : `beach`,
+    icon: pkmn.kyogrePrimal,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.oldGateau.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/oldGateau.png"> Old Gateau to enter`,
+    unlockRequirement : function() { return item.oldGateau.got>2 },
+    level : 90,
+    team : {
+        slot1 : pkmn.kyogrePrimal,
+        slot1Moves : [move.rainDance.id, move.hydroPump.id, move.thunder.id, move.iceBeam.id],
+    },  
+    reward : [pkmn.kyogrePrimal],
 }
 
 
