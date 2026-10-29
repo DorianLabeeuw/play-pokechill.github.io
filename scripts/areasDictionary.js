@@ -1256,6 +1256,238 @@ areas.relicPassage = {
 }
 
 
+//fork content v5.3 - Far Lands (level 90 wild areas, one per rotation)
+
+areas.galarHighlands = {
+    rotation : 1,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `mountain`,
+    icon: pkmn.galarianMeowth,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.galarianMeowth, pkmn.galarianFarfetchd, pkmn.galarianStunfisk],
+        uncommon : [pkmn.galarianMrmime],
+        rare : [pkmn.kubfu]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsFighting
+    }
+}
+
+areas.akalaOutskirts = {
+    rotation : 2,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `beach`,
+    icon: pkmn.alolanGeodude,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.alolanGeodude, pkmn.alolanExeggutor, pkmn.alolanMarowak],
+        uncommon : [pkmn.wishiwashiSchool],
+        rare : [pkmn.lycanrocDusk]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsRock
+    }
+}
+
+areas.coronetHighlands = {
+    rotation : 3,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `snow`,
+    icon: pkmn.hisuianZorua,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.hisuianZorua, pkmn.hisuianSliggoo, pkmn.hisuianAvalugg],
+        uncommon : [pkmn.wyrdeer],
+        rare : [pkmn.hisuianTyphlosion]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsIce
+    }
+}
+
+areas.obsidianFieldlands = {
+    rotation : 4,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `forest`,
+    icon: pkmn.burmySandy,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.burmySandy, pkmn.burmyTrash, pkmn.kleavor],
+        uncommon : [pkmn.ursaluna],
+        rare : [pkmn.hisuianDecidueye]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsBug
+    }
+}
+
+areas.slumberingWeald = {
+    rotation : 5,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `night`,
+    icon: pkmn.galarianCorsola,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.galarianCorsola, pkmn.galarianYamask, pkmn.gimmighoulRoaming],
+        uncommon : [pkmn.galarianWeezing],
+        rare : [pkmn.ursalunaBloodmoon]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsGhost
+    }
+}
+
+areas.casseroyaLake = {
+    rotation : 6,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `lake`,
+    icon: pkmn.tatsugiriDroopy,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.tatsugiriDroopy, pkmn.tatsugiriStretchy, pkmn.basculinBlue],
+        uncommon : [pkmn.flamigo],
+        rare : [pkmn.archaludon]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsDragon
+    }
+}
+
+areas.weatherInstitute = {
+    rotation : 7,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `lab`,
+    icon: pkmn.castformSunny,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.castformSunny, pkmn.castformRainy, pkmn.castformSnowy],
+        uncommon : [pkmn.cherrimSunshine],
+        rare : [pkmn.greninjaAsh]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsWater
+    }
+}
+
+areas.galarCountryside = {
+    rotation : 8,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `town`,
+    icon: pkmn.galarianSlowpoke,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.galarianSlowpoke, pkmn.galarianDarumaka, pkmn.farfetchd],
+        uncommon : [pkmn.sirfetchd],
+        rare : [pkmn.hydrapple]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsPsychic
+    }
+}
+
+areas.kitakamiOrchard = {
+    rotation : 9,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `forest`,
+    icon: pkmn.dipplin,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.dipplin, pkmn.toedscool, pkmn.poltchageist],
+        uncommon : [pkmn.carnivine],
+        rare : [pkmn.floetteEternal]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsGrass
+    }
+}
+
+areas.pikachuFanClub = {
+    rotation : 10,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `town`,
+    icon: pkmn.pikachuHoenn,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.pikachuHoenn, pkmn.pikachuUnova, pkmn.pikachuKalos],
+        uncommon : [pkmn.pikachuWorld],
+        rare : [pkmn.pikachuAsh]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsElectric
+    }
+}
+
+areas.butterflyGarden = {
+    rotation : 11,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `forest`,
+    icon: pkmn.vivillonPokeball,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.vivillonPokeball, pkmn.vivillonSun, pkmn.squawkabilly],
+        uncommon : [pkmn.dudunsparce],
+        rare : [pkmn.dududunsparce]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsFlying
+    }
+}
+
+areas.crimsonMirelands = {
+    rotation : 12,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `lake`,
+    icon: pkmn.basculinWhite,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.basculinWhite, pkmn.shellosEast, pkmn.toedscool],
+        uncommon : [pkmn.galarianWeezing],
+        rare : [pkmn.kubfu]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsGround
+    }
+}
+
+
+
 
 /*
 Normal 3
