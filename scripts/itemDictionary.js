@@ -897,6 +897,163 @@ item.epochFeather = {
     info: function() {return `Can be used to catch event Pokemon. Expires after event finishes`},
 }
 
+item.mythicRelic = {
+    type: "key",
+    info: function() {return `Found in the Mythic Ruins. Used to enter the legendary sanctums of the Master events`},
+}
+
+//fork content v5.6 - form-changing items
+item.redOrb = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.blueOrb = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.griseousCore = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.adamantCrystal = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.lustrousGlobe = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.revealGlass = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.dnaSplicer = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.prisonBottle = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.gracidea = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.meteorite = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.zygardeCube = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.nSolarizer = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.nLunarizer = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.ultranecroziumZ = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.reinsOfUnity = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.rustedSword = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.rustedShield = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.secretSword = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.relicScore = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.soulHeartCog = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.dadaBandana = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.wellspringMask = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.hearthflameMask = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.cornerstoneMask = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+item.stellarTeraShard = {
+    evo: true,
+    formChange: true,
+    info: function() {return `Use: Reveal the true form of a certain legendary Pokemon (Must be level ${wildAreaLevel2}+)`},
+}
+
+
 item.pokeflute = {
     type: "key",
     rotation: 1,

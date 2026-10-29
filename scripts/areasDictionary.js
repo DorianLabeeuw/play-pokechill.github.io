@@ -1256,6 +1256,238 @@ areas.relicPassage = {
 }
 
 
+//fork content v5.3 - Far Lands (level 90 wild areas, one per rotation)
+
+areas.galarHighlands = {
+    rotation : 1,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `mountain`,
+    icon: pkmn.galarianMeowth,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.galarianMeowth, pkmn.galarianFarfetchd, pkmn.galarianStunfisk],
+        uncommon : [pkmn.galarianMrmime],
+        rare : [pkmn.kubfu]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsFighting
+    }
+}
+
+areas.akalaOutskirts = {
+    rotation : 2,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `beach`,
+    icon: pkmn.alolanGeodude,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.alolanGeodude, pkmn.alolanExeggutor, pkmn.alolanMarowak],
+        uncommon : [pkmn.wishiwashiSchool],
+        rare : [pkmn.lycanrocDusk]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsRock
+    }
+}
+
+areas.coronetHighlands = {
+    rotation : 3,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `snow`,
+    icon: pkmn.hisuianZorua,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.hisuianZorua, pkmn.hisuianSliggoo, pkmn.hisuianAvalugg],
+        uncommon : [pkmn.wyrdeer],
+        rare : [pkmn.hisuianTyphlosion]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsIce
+    }
+}
+
+areas.obsidianFieldlands = {
+    rotation : 4,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `forest`,
+    icon: pkmn.burmySandy,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.burmySandy, pkmn.burmyTrash, pkmn.kleavor],
+        uncommon : [pkmn.ursaluna],
+        rare : [pkmn.hisuianDecidueye]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsBug
+    }
+}
+
+areas.slumberingWeald = {
+    rotation : 5,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `night`,
+    icon: pkmn.galarianCorsola,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.galarianCorsola, pkmn.galarianYamask, pkmn.gimmighoulRoaming],
+        uncommon : [pkmn.galarianWeezing],
+        rare : [pkmn.ursalunaBloodmoon]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsGhost
+    }
+}
+
+areas.casseroyaLake = {
+    rotation : 6,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `lake`,
+    icon: pkmn.tatsugiriDroopy,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.tatsugiriDroopy, pkmn.tatsugiriStretchy, pkmn.basculinBlue],
+        uncommon : [pkmn.flamigo],
+        rare : [pkmn.archaludon]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsDragon
+    }
+}
+
+areas.weatherInstitute = {
+    rotation : 7,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `lab`,
+    icon: pkmn.castformSunny,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.castformSunny, pkmn.castformRainy, pkmn.castformSnowy],
+        uncommon : [pkmn.cherrimSunshine],
+        rare : [pkmn.greninjaAsh]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsWater
+    }
+}
+
+areas.galarCountryside = {
+    rotation : 8,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `town`,
+    icon: pkmn.galarianSlowpoke,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.galarianSlowpoke, pkmn.galarianDarumaka, pkmn.farfetchd],
+        uncommon : [pkmn.sirfetchd],
+        rare : [pkmn.hydrapple]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsPsychic
+    }
+}
+
+areas.kitakamiOrchard = {
+    rotation : 9,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `forest`,
+    icon: pkmn.dipplin,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.dipplin, pkmn.toedscool, pkmn.poltchageist],
+        uncommon : [pkmn.carnivine],
+        rare : [pkmn.floetteEternal]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsGrass
+    }
+}
+
+areas.pikachuFanClub = {
+    rotation : 10,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `town`,
+    icon: pkmn.pikachuHoenn,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.pikachuHoenn, pkmn.pikachuUnova, pkmn.pikachuKalos],
+        uncommon : [pkmn.pikachuWorld],
+        rare : [pkmn.pikachuAsh]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsElectric
+    }
+}
+
+areas.butterflyGarden = {
+    rotation : 11,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `forest`,
+    icon: pkmn.vivillonPokeball,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.vivillonPokeball, pkmn.vivillonSun, pkmn.squawkabilly],
+        uncommon : [pkmn.dudunsparce],
+        rare : [pkmn.dududunsparce]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsFlying
+    }
+}
+
+areas.crimsonMirelands = {
+    rotation : 12,
+    level : wildAreaLevel5,
+    type: `wild`,
+    background : `lake`,
+    icon: pkmn.basculinWhite,
+    unlockDescription : `Defeat Pokemon Professor Oak in VS to unlock`,
+    unlockRequirement : function() { return areas.vsPokemonProfessorOak.defeated },
+    spawns: {
+        common : [pkmn.basculinWhite, pkmn.shellosEast, pkmn.toedscool],
+        uncommon : [pkmn.galarianWeezing],
+        rare : [pkmn.kubfu]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        rare : wildRareItemsGround
+    }
+}
+
+
+
 
 /*
 Normal 3
@@ -5188,6 +5420,1686 @@ areas.vsPokemonProfessorOak = {
 
 
 
+//fork content v5.2 - Legends League (post Professor Oak)
+
+areas.vsChampionLeon = {
+    name: `Champion Leon`,
+    background : `gym`,
+    sprite : `leon`,
+    difficulty : 27,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.aegislash,
+        slot1Moves : [move.kingsShield.id, move.shadowBall.id, move.flashCannon.id, move.swordsDance.id],
+        slot2 : pkmn.dragapult,
+        slot2Moves : [move.dragonDarts.id, move.phantomForce.id, move.uTurn.id, move.dragonDance.id],
+        slot3 : pkmn.rillaboomGmax,
+        slot3Moves : [move.drumBeating.id, move.grassyTerrain.id, move.knockOff.id, move.highHorsepower.id],
+        slot4 : pkmn.inteleonGmax,
+        slot4Moves : [move.snipeShot.id, move.iceBeam.id, move.darkPulse.id, move.rainDance.id],
+        slot5 : pkmn.cinderaceGmax,
+        slot5Moves : [move.pyroBall.id, move.highHorsepower.id, move.uTurn.id, move.bulkUp.id],
+        slot6 : pkmn.charizardGmax,
+        slot6Moves : [move.sunnyDay.id, move.fireBlast.id, move.airShlash.id, move.dragonPulse.id],
+    },
+    fieldEffect : [field.harshSun.id, field.stealthRocks.id],
+    reward : [pkmn.zacian, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsChampionDiantha = {
+    name: `Champion Diantha`,
+    background : `gym`,
+    sprite : `diantha`,
+    difficulty : 28,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.hawlucha,
+        slot1Moves : [move.flyingPress.id, move.swordsDance.id, move.acrobatics.id, move.closeCombat.id],
+        slot2 : pkmn.tyrantrum,
+        slot2Moves : [move.headCharge.id, move.dragonClaw.id, move.stoneEdge.id, move.dragonDance.id],
+        slot3 : pkmn.aurorus,
+        slot3Moves : [move.freezeDry.id, move.meteorBeam.id, move.hail.id, move.earthPower.id],
+        slot4 : pkmn.goodra,
+        slot4Moves : [move.dracoMeteor.id, move.sludgeWave.id, move.fireBlast.id, move.thunderbolt.id],
+        slot5 : pkmn.megaDiancie,
+        slot5Moves : [move.powerGem.id, move.moonblast.id, move.rockPolish.id, move.earthPower.id],
+        slot6 : pkmn.megaGardevoir,
+        slot6Moves : [move.calmMind.id, move.moonblast.id, move.psychic.id, move.mysticalFire.id],
+    },
+    fieldEffect : [field.mistyField.id, field.fatiguingCurse.id],
+    reward : [pkmn.xerneas, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsChampionIris = {
+    name: `Champion Iris`,
+    background : `gym`,
+    sprite : `iris`,
+    difficulty : 29,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.archeops,
+        slot1Moves : [move.accelerock.id, move.acrobatics.id, move.stoneEdge.id, move.dragonClaw.id],
+        slot2 : pkmn.lapras,
+        slot2Moves : [move.freezeDry.id, move.surf.id, move.thunderbolt.id, move.hail.id],
+        slot3 : pkmn.megaAggron,
+        slot3Moves : [move.ironDefense.id, move.ironHead.id, move.bodyPress.id, move.earthquake.id],
+        slot4 : pkmn.druddigon,
+        slot4Moves : [move.outrage.id, move.firePunch.id, move.knockOff.id, move.honeClaws.id],
+        slot5 : pkmn.hydreigon,
+        slot5Moves : [move.nastyPlot.id, move.darkPulse.id, move.dracoMeteor.id, move.flamethrower.id],
+        slot6 : pkmn.haxorus,
+        slot6Moves : [move.dragonDance.id, move.outrage.id, move.earthquake.id, move.closeCombat.id],
+    },
+    fieldEffect : [field.weakeningCurse.id, field.deltaStream.id],
+    reward : [pkmn.zekrom, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsChampionKieran = {
+    name: `Champion Kieran`,
+    background : `gym`,
+    sprite : `kieran`,
+    difficulty : 30,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.incineroar,
+        slot1Moves : [move.darkestLariat.id, move.flareBlitz.id, move.knockOff.id, move.bulkUp.id],
+        slot2 : pkmn.kingambit,
+        slot2Moves : [move.swordsDance.id, move.ironHead.id, move.knockOff.id, move.ruination.id],
+        slot3 : pkmn.hydrapple,
+        slot3Moves : [move.dracoMeteor.id, move.appleAcid.id, move.earthPower.id, move.energyBall.id],
+        slot4 : pkmn.dragonite,
+        slot4Moves : [move.dragonDance.id, move.extremeSpeed.id, move.outrage.id, move.earthquake.id],
+        slot5 : pkmn.ogerponHearthflame,
+        slot5Moves : [move.leafBlade.id, move.flareBlitz.id, move.swordsDance.id, move.knockOff.id],
+        slot6 : pkmn.terapagosTerastal,
+        slot6Moves : [move.calmMind.id, move.triAttack.id, move.earthPower.id, move.dazzlingGleam.id],
+    },
+    fieldEffect : [field.trickField.id, field.unnerve.id],
+    reward : [pkmn.terapagos, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsSubwayBossIngo = {
+    name: `Subway Boss Ingo`,
+    background : `gym`,
+    sprite : `ingo`,
+    difficulty : 31,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.megaExcadrill,
+        slot1Moves : [move.sandstorm.id, move.earthquake.id, move.ironHead.id, move.rockSlide.id],
+        slot2 : pkmn.megaEelektross,
+        slot2Moves : [move.thunderbolt.id, move.flamethrower.id, move.knockOff.id, move.coil.id],
+        slot3 : pkmn.megaChandelure,
+        slot3Moves : [move.shadowBall.id, move.overheat.id, move.energyBall.id, move.trickRoom.id],
+        slot4 : pkmn.metagross,
+        slot4Moves : [move.bulletPunch.id, move.zenHeadbut.id, move.earthquake.id, move.agility.id],
+        slot5 : pkmn.megaMetagross,
+        slot5Moves : [move.agility.id, move.ironHead.id, move.psychicFangs.id, move.icePunch.id],
+        slot6 : pkmn.dialgaOrigin,
+        slot6Moves : [move.roarOfTime.id, move.flashCannon.id, move.earthPower.id, move.trickRoom.id],
+    },
+    fieldEffect : [field.averageTime.id, field.stealthRocks.id, field.ironBody.id],
+    reward : [pkmn.dialga, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsStarCaptainPenny = {
+    name: `Star Captain Penny`,
+    background : `gym`,
+    sprite : `penny`,
+    difficulty : 32,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.jolteon,
+        slot1Moves : [move.voltSwitch.id, move.thunderbolt.id, move.shadowBall.id, move.electricTerrain.id],
+        slot2 : pkmn.vaporeon,
+        slot2Moves : [move.rainDance.id, move.scald.id, move.iceBeam.id, move.acidArmor.id],
+        slot3 : pkmn.umbreon,
+        slot3Moves : [move.darkPulse.id, move.toxic.id, move.willOWisp.id, move.snarl.id],
+        slot4 : pkmn.espeon,
+        slot4Moves : [move.calmMind.id, move.psychic.id, move.dazzlingGleam.id, move.shadowBall.id],
+        slot5 : pkmn.sylveon,
+        slot5Moves : [move.hyperVoice.id, move.moonblast.id, move.calmMind.id, move.mysticalFire.id],
+        slot6 : pkmn.eeveeGmax,
+        slot6Moves : [move.batonPass.id, move.extremeSpeed.id, move.bodyPress.id, move.bellyDrum.id],
+    },
+    fieldEffect : [field.neutralisingGas.id, field.wonderWard.id],
+    reward : [pkmn.magearna, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsGymLeaderSabrinaRematch = {
+    name: `Psychic Master Sabrina`,
+    background : `gym`,
+    sprite : `sabrina`,
+    difficulty : 33,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.hatterene,
+        slot1Moves : [move.trickRoom.id, move.psychic.id, move.mysticalFire.id, move.dazzlingGleam.id],
+        slot2 : pkmn.slowking,
+        slot2Moves : [move.calmMind.id, move.scald.id, move.psychic.id, move.fireBlast.id],
+        slot3 : pkmn.espathra,
+        slot3Moves : [move.luminaCrash.id, move.storedPower.id, move.calmMind.id, move.dazzlingGleam.id],
+        slot4 : pkmn.megaGengar,
+        slot4Moves : [move.shadowBall.id, move.sludgeWave.id, move.focusBlast.id, move.nastyPlot.id],
+        slot5 : pkmn.megaAlakazam,
+        slot5Moves : [move.psychic.id, move.shadowBall.id, move.focusBlast.id, move.calmMind.id],
+        slot6 : pkmn.deoxysAttack,
+        slot6Moves : [move.psychoBoost.id, move.superpower.id, move.extremeSpeed.id, move.darkPulse.id],
+    },
+    fieldEffect : [field.reverseField.id, field.thickFog.id, field.noMercy.id],
+    reward : [pkmn.deoxys, item.autoRefightTicket, item.goldenBottleCap],
+}
+
+areas.vsShadowTrainerFinal = {
+    name: `??? Shadow Trainer`,
+    background : `night`,
+    sprite : `shadow`,
+    difficulty : 35,
+    trainer: true,
+    type: `vs`,
+    level : 150,
+    team : {
+        slot1 : pkmn.megaTyranitar,
+        slot1Moves : [move.sandstorm.id, move.stoneEdge.id, move.crunch.id, move.earthquake.id],
+        slot2 : pkmn.megaLucario,
+        slot2Moves : [move.swordsDance.id, move.closeCombat.id, move.bulletPunch.id, move.extremeSpeed.id],
+        slot3 : pkmn.kyurem,
+        slot3Moves : [move.glaciate.id, move.freezeDry.id, move.dracoMeteor.id, move.earthPower.id],
+        slot4 : pkmn.megaRayquaza,
+        slot4Moves : [move.dragonAscent.id, move.extremeSpeed.id, move.dragonDance.id, move.earthquake.id],
+        slot5 : pkmn.megaMewtwoX,
+        slot5Moves : [move.bulkUp.id, move.zenHeadbut.id, move.closeCombat.id, move.iceBeam.id],
+        slot6 : pkmn.megaMewtwoY,
+        slot6Moves : [move.calmMind.id, move.psychoBoost.id, move.auraSphere.id, move.shadowBall.id],
+    },
+    fieldEffect : [field.noMercy.id, field.wonderWard.id, field.stealthRocks.id, field.deltaStream.id],
+    itemReward: { 1 : { item: item.autoRefightTicket.id, amount: 3 }, 2 : { item: item.goldenBottleCap.id, amount: 30 }},
+    reward : [pkmn.mewtwo],
+    encounterEffect: function() {
+        document.getElementById("tooltipTop").style.display = `none`
+        document.getElementById("tooltipTitle").innerHTML = `Legends League cleared!`
+        document.getElementById("tooltipBottom").style.display = `none`
+        document.getElementById("tooltipMid").innerHTML = `
+        <div class="genetics-overview-tags" >
+        <div style="filter:hue-rotate(0deg)" >The shadow fades... but other legends still await</div>
+        </div>
+        `
+        openTooltip()
+    }
+}
+
+
+//fork content v5.4 - Master events: Mythic Ruins and legendary sanctums
+
+areas.mythicRuins = {
+    rotation: [1,2,3,4,5,6],
+    type: `event`,
+    name: `Mythic Ruins`,
+    background : `cave`,
+    level : 100,
+    icon: pkmn.bronzong,
+    difficulty: 6,
+    uncatchable: true,
+    spawns: {
+        common : [pkmn.bronzong, pkmn.claydol, pkmn.golurk, pkmn.cofagrigus, pkmn.sigilyph, pkmn.runerigus],
+    },
+    drops: {
+        common : [item.nothing],
+        uncommon : [item.mythicRelic]
+    },
+    category: 3,
+}
+
+areas.masterMew = {
+    rotation: 1,
+    type: `event`,
+    name: `Mew Sanctum`,
+    background : `space`,
+    icon: pkmn.mew,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.mew,
+        slot1Moves : [move.psychoBoost.id, move.futureSight.id, move.extrasensory.id, move.zenHeadbut.id],
+    },
+    reward : [pkmn.mew],
+    category: 3,
+}
+
+areas.masterMewtwo = {
+    rotation: 1,
+    type: `event`,
+    name: `Mewtwo Sanctum`,
+    background : `space`,
+    icon: pkmn.mewtwo,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>2 },
+    level : 110,
+    team : {
+        slot1 : pkmn.mewtwo,
+        slot1Moves : [move.psychoBoost.id, move.futureSight.id, move.extrasensory.id, move.zenHeadbut.id],
+    },
+    reward : [pkmn.mewtwo],
+    category: 3,
+}
+
+areas.masterRaikou = {
+    rotation: 1,
+    type: `event`,
+    name: `Raikou Sanctum`,
+    background : `lab`,
+    icon: pkmn.raikou,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.raikou,
+        slot1Moves : [move.supercellSlam.id, move.wildCharge.id, move.thunder.id, move.thunderbolt.id],
+    },
+    reward : [pkmn.raikou],
+    category: 3,
+}
+
+areas.masterEntei = {
+    rotation: 1,
+    type: `event`,
+    name: `Entei Sanctum`,
+    background : `volcano`,
+    icon: pkmn.entei,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.entei,
+        slot1Moves : [move.overheat.id, move.fireBlast.id, move.flareBlitz.id, move.flamethrower.id],
+    },
+    reward : [pkmn.entei],
+    category: 3,
+}
+
+areas.masterSuicune = {
+    rotation: 1,
+    type: `event`,
+    name: `Suicune Sanctum`,
+    background : `sea`,
+    icon: pkmn.suicune,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.suicune,
+        slot1Moves : [move.waveCrash.id, move.hydroPump.id, move.muddyWater.id, move.aquaTail.id],
+    },
+    reward : [pkmn.suicune],
+    category: 3,
+}
+
+areas.masterLugia = {
+    rotation: 1,
+    type: `event`,
+    name: `Lugia Sanctum`,
+    background : `space`,
+    icon: pkmn.lugia,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>2 },
+    level : 110,
+    team : {
+        slot1 : pkmn.lugia,
+        slot1Moves : [move.aeroblast.id, move.psychoBoost.id, move.hurricane.id, move.futureSight.id],
+    },
+    reward : [pkmn.lugia],
+    category: 3,
+}
+
+areas.masterHooh = {
+    rotation: 1,
+    type: `event`,
+    name: `Hooh Sanctum`,
+    background : `volcano`,
+    icon: pkmn.hooh,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>2 },
+    level : 110,
+    team : {
+        slot1 : pkmn.hooh,
+        slot1Moves : [move.sacredFire.id, move.overheat.id, move.hurricane.id, move.fireBlast.id],
+    },
+    reward : [pkmn.hooh],
+    category: 3,
+}
+
+areas.masterCelebi = {
+    rotation: 1,
+    type: `event`,
+    name: `Celebi Sanctum`,
+    background : `space`,
+    icon: pkmn.celebi,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.celebi,
+        slot1Moves : [move.psychoBoost.id, move.leafStorm.id, move.solarBlade.id, move.solarBeam.id],
+    },
+    reward : [pkmn.celebi],
+    category: 3,
+}
+
+areas.masterKyogre = {
+    rotation: 2,
+    type: `event`,
+    name: `Kyogre Sanctum`,
+    background : `sea`,
+    icon: pkmn.kyogre,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.kyogre,
+        slot1Moves : [move.waveCrash.id, move.hydroPump.id, move.muddyWater.id, move.aquaTail.id],
+    },
+    reward : [pkmn.kyogre],
+    category: 3,
+}
+
+areas.masterGroudon = {
+    rotation: 2,
+    type: `event`,
+    name: `Groudon Sanctum`,
+    background : `desert`,
+    icon: pkmn.groudon,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.groudon,
+        slot1Moves : [move.stompingTantrum.id, move.earthquake.id, move.earthPower.id, move.dig.id],
+    },
+    reward : [pkmn.groudon],
+    category: 3,
+}
+
+areas.masterRayquaza = {
+    rotation: 2,
+    type: `event`,
+    name: `Rayquaza Sanctum`,
+    background : `mountain`,
+    icon: pkmn.rayquaza,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>2 },
+    level : 110,
+    team : {
+        slot1 : pkmn.rayquaza,
+        slot1Moves : [move.outrage.id, move.hurricane.id, move.dracoMeteor.id, move.fly.id],
+    },
+    reward : [pkmn.rayquaza],
+    category: 3,
+}
+
+areas.masterLatias = {
+    rotation: 2,
+    type: `event`,
+    name: `Latias Sanctum`,
+    background : `mountain`,
+    icon: pkmn.latias,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.latias,
+        slot1Moves : [move.mistBall.id, move.outrage.id, move.psychoBoost.id, move.dracoMeteor.id],
+    },
+    reward : [pkmn.latias],
+    category: 3,
+}
+
+areas.masterLatios = {
+    rotation: 2,
+    type: `event`,
+    name: `Latios Sanctum`,
+    background : `mountain`,
+    icon: pkmn.latios,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.latios,
+        slot1Moves : [move.lusterPurge.id, move.outrage.id, move.psychoBoost.id, move.dracoMeteor.id],
+    },
+    reward : [pkmn.latios],
+    category: 3,
+}
+
+areas.masterRegigigas = {
+    rotation: 2,
+    type: `event`,
+    name: `Regigigas Sanctum`,
+    background : `route`,
+    icon: pkmn.regigigas,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>2 },
+    level : 110,
+    team : {
+        slot1 : pkmn.regigigas,
+        slot1Moves : [move.crushGrip.id, move.hyperBeam.id, move.gigaImpact.id, move.strength.id],
+    },
+    reward : [pkmn.regigigas],
+    category: 3,
+}
+
+areas.masterJirachi = {
+    rotation: 2,
+    type: `event`,
+    name: `Jirachi Sanctum`,
+    background : `lab`,
+    icon: pkmn.jirachi,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.jirachi,
+        slot1Moves : [move.doomDesire.id, move.ironTail.id, move.psychoBoost.id, move.futureSight.id],
+    },
+    reward : [pkmn.jirachi],
+    category: 3,
+}
+
+areas.masterKoraidon = {
+    rotation: 3,
+    type: `event`,
+    name: `Koraidon Sanctum`,
+    background : `gym`,
+    icon: pkmn.koraidon,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.koraidon,
+        slot1Moves : [move.hammerArm.id, move.outrage.id, move.superpower.id, move.dracoMeteor.id],
+    },
+    reward : [pkmn.koraidon],
+    category: 3,
+}
+
+areas.masterMiraidon = {
+    rotation: 3,
+    type: `event`,
+    name: `Miraidon Sanctum`,
+    background : `lab`,
+    icon: pkmn.miraidon,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.miraidon,
+        slot1Moves : [move.supercellSlam.id, move.outrage.id, move.dracoMeteor.id, move.wildCharge.id],
+    },
+    reward : [pkmn.miraidon],
+    category: 3,
+}
+
+areas.masterWalkingWake = {
+    rotation: 3,
+    type: `event`,
+    name: `Walking Wake Sanctum`,
+    background : `sea`,
+    icon: pkmn.walkingWake,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>2 },
+    level : 110,
+    team : {
+        slot1 : pkmn.walkingWake,
+        slot1Moves : [move.waveCrash.id, move.outrage.id, move.dracoMeteor.id, move.hydroPump.id],
+    },
+    reward : [pkmn.walkingWake],
+    category: 3,
+}
+
+areas.masterRagingBolt = {
+    rotation: 3,
+    type: `event`,
+    name: `Raging Bolt Sanctum`,
+    background : `lab`,
+    icon: pkmn.ragingBolt,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.ragingBolt,
+        slot1Moves : [move.supercellSlam.id, move.outrage.id, move.dracoMeteor.id, move.wildCharge.id],
+    },
+    reward : [pkmn.ragingBolt],
+    category: 3,
+}
+
+areas.masterIronLeaves = {
+    rotation: 3,
+    type: `event`,
+    name: `Iron Leaves Sanctum`,
+    background : `forest`,
+    icon: pkmn.ironLeaves,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.ironLeaves,
+        slot1Moves : [move.leafStorm.id, move.psychoBoost.id, move.solarBlade.id, move.solarBeam.id],
+    },
+    reward : [pkmn.ironLeaves],
+    category: 3,
+}
+
+areas.masterIronBoulder = {
+    rotation: 3,
+    type: `event`,
+    name: `Iron Boulder Sanctum`,
+    background : `cave`,
+    icon: pkmn.ironBoulder,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.ironBoulder,
+        slot1Moves : [move.wrathOfTheLand.id, move.psychoBoost.id, move.futureSight.id, move.meteorBeam.id],
+    },
+    reward : [pkmn.ironBoulder],
+    category: 3,
+}
+
+areas.masterIronCrown = {
+    rotation: 3,
+    type: `event`,
+    name: `Iron Crown Sanctum`,
+    background : `lab`,
+    icon: pkmn.ironCrown,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.ironCrown,
+        slot1Moves : [move.ironTail.id, move.psychoBoost.id, move.futureSight.id, move.extrasensory.id],
+    },
+    reward : [pkmn.ironCrown],
+    category: 3,
+}
+
+areas.masterOkidogi = {
+    rotation: 3,
+    type: `event`,
+    name: `Okidogi Sanctum`,
+    background : `plant`,
+    icon: pkmn.okidogi,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.okidogi,
+        slot1Moves : [move.noxiousTorque.id, move.hammerArm.id, move.superpower.id, move.closeCombat.id],
+    },
+    reward : [pkmn.okidogi],
+    category: 3,
+}
+
+areas.masterMunkidori = {
+    rotation: 3,
+    type: `event`,
+    name: `Munkidori Sanctum`,
+    background : `plant`,
+    icon: pkmn.munkidori,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.munkidori,
+        slot1Moves : [move.noxiousTorque.id, move.psychoBoost.id, move.futureSight.id, move.extrasensory.id],
+    },
+    reward : [pkmn.munkidori],
+    category: 3,
+}
+
+areas.masterFezandipiti = {
+    rotation: 3,
+    type: `event`,
+    name: `Fezandipiti Sanctum`,
+    background : `plant`,
+    icon: pkmn.fezandipiti,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.fezandipiti,
+        slot1Moves : [move.noxiousTorque.id, move.magicalTorque.id, move.sludgeWave.id, move.moonblast.id],
+    },
+    reward : [pkmn.fezandipiti],
+    category: 3,
+}
+
+areas.masterOgerponTeal = {
+    rotation: 3,
+    type: `event`,
+    name: `Ogerpon Teal Sanctum`,
+    background : `forest`,
+    icon: pkmn.ogerponTeal,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.ogerponTeal,
+        slot1Moves : [move.leafStorm.id, move.solarBlade.id, move.solarBeam.id, move.energyBall.id],
+    },
+    reward : [pkmn.ogerponTeal],
+    category: 3,
+}
+
+areas.masterPecharunt = {
+    rotation: 3,
+    type: `event`,
+    name: `Pecharunt Sanctum`,
+    background : `plant`,
+    icon: pkmn.pecharunt,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.pecharunt,
+        slot1Moves : [move.noxiousTorque.id, move.phantomForce.id, move.sludgeWave.id, move.poisonJab.id],
+    },
+    reward : [pkmn.pecharunt],
+    category: 3,
+}
+
+areas.masterTerapagos = {
+    rotation: 3,
+    type: `event`,
+    name: `Terapagos Sanctum`,
+    background : `route`,
+    icon: pkmn.terapagos,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.terapagos,
+        slot1Moves : [move.hyperBeam.id, move.gigaImpact.id, move.strength.id, move.slash.id],
+    },
+    reward : [pkmn.terapagos],
+    category: 3,
+}
+
+areas.masterSolgaleo = {
+    rotation: 4,
+    type: `event`,
+    name: `Solgaleo Sanctum`,
+    background : `space`,
+    icon: pkmn.solgaleo,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.solgaleo,
+        slot1Moves : [move.sunsteelStrike.id, move.psychoBoost.id, move.ironTail.id, move.futureSight.id],
+    },
+    reward : [pkmn.solgaleo],
+    category: 3,
+}
+
+areas.masterLunala = {
+    rotation: 4,
+    type: `event`,
+    name: `Lunala Sanctum`,
+    background : `space`,
+    icon: pkmn.lunala,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.lunala,
+        slot1Moves : [move.moongeistBeam.id, move.psychoBoost.id, move.phantomForce.id, move.futureSight.id],
+    },
+    reward : [pkmn.lunala],
+    category: 3,
+}
+
+areas.masterNecrozma = {
+    rotation: 4,
+    type: `event`,
+    name: `Necrozma Sanctum`,
+    background : `space`,
+    icon: pkmn.necrozma,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.necrozma,
+        slot1Moves : [move.prismaticLaser.id, move.psychoBoost.id, move.futureSight.id, move.extrasensory.id],
+    },
+    reward : [pkmn.necrozma],
+    category: 3,
+}
+
+areas.masterZeraora = {
+    rotation: 4,
+    type: `event`,
+    name: `Zeraora Sanctum`,
+    background : `lab`,
+    icon: pkmn.zeraora,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.zeraora,
+        slot1Moves : [move.supercellSlam.id, move.wildCharge.id, move.thunder.id, move.thunderbolt.id],
+    },
+    reward : [pkmn.zeraora],
+    category: 3,
+}
+
+areas.masterCelesteela = {
+    rotation: 4,
+    type: `event`,
+    name: `Celesteela Sanctum`,
+    background : `lab`,
+    icon: pkmn.celesteela,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.celesteela,
+        slot1Moves : [move.ironTail.id, move.hurricane.id, move.smartStrike.id, move.fly.id],
+    },
+    reward : [pkmn.celesteela],
+    category: 3,
+}
+
+areas.masterMagearna = {
+    rotation: 4,
+    type: `event`,
+    name: `Magearna Sanctum`,
+    background : `lab`,
+    icon: pkmn.magearna,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.magearna,
+        slot1Moves : [move.gearUp.id, move.ironTail.id, move.magicalTorque.id, move.moonblast.id],
+    },
+    reward : [pkmn.magearna],
+    category: 3,
+}
+
+areas.masterXerneas = {
+    rotation: 4,
+    type: `event`,
+    name: `Xerneas Sanctum`,
+    background : `lake`,
+    icon: pkmn.xerneas,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.xerneas,
+        slot1Moves : [move.magicalTorque.id, move.moonblast.id, move.playRough.id, move.dazzlingGleam.id],
+    },
+    reward : [pkmn.xerneas],
+    category: 3,
+}
+
+areas.masterYveltal = {
+    rotation: 4,
+    type: `event`,
+    name: `Yveltal Sanctum`,
+    background : `night`,
+    icon: pkmn.yveltal,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.yveltal,
+        slot1Moves : [move.brutalSwing.id, move.hurricane.id, move.fly.id, move.nightDaze.id],
+    },
+    reward : [pkmn.yveltal],
+    category: 3,
+}
+
+areas.masterZygarde50 = {
+    rotation: 4,
+    type: `event`,
+    name: `Zygarde50 Sanctum`,
+    background : `mountain`,
+    icon: pkmn.zygarde50,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.zygarde50,
+        slot1Moves : [move.outrage.id, move.stompingTantrum.id, move.dracoMeteor.id, move.earthquake.id],
+    },
+    reward : [pkmn.zygarde50],
+    category: 3,
+}
+
+areas.masterDiancie = {
+    rotation: 4,
+    type: `event`,
+    name: `Diancie Sanctum`,
+    background : `cave`,
+    icon: pkmn.diancie,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.diancie,
+        slot1Moves : [move.wrathOfTheLand.id, move.magicalTorque.id, move.meteorBeam.id, move.stoneEdge.id],
+    },
+    reward : [pkmn.diancie],
+    category: 3,
+}
+
+areas.masterHoopa = {
+    rotation: 4,
+    type: `event`,
+    name: `Hoopa Sanctum`,
+    background : `space`,
+    icon: pkmn.hoopa,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.hoopa,
+        slot1Moves : [move.psychoBoost.id, move.phantomForce.id, move.futureSight.id, move.extrasensory.id],
+    },
+    reward : [pkmn.hoopa],
+    category: 3,
+}
+
+areas.masterVolcanion = {
+    rotation: 4,
+    type: `event`,
+    name: `Volcanion Sanctum`,
+    background : `volcano`,
+    icon: pkmn.volcanion,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.volcanion,
+        slot1Moves : [move.overheat.id, move.waveCrash.id, move.fireBlast.id, move.flareBlitz.id],
+    },
+    reward : [pkmn.volcanion],
+    category: 3,
+}
+
+areas.masterVictini = {
+    rotation: 5,
+    type: `event`,
+    name: `Victini Sanctum`,
+    background : `space`,
+    icon: pkmn.victini,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.victini,
+        slot1Moves : [move.vCreate.id, move.psychoBoost.id, move.overheat.id, move.fireBlast.id],
+    },
+    reward : [pkmn.victini],
+    category: 3,
+}
+
+areas.masterCobalion = {
+    rotation: 5,
+    type: `event`,
+    name: `Cobalion Sanctum`,
+    background : `lab`,
+    icon: pkmn.cobalion,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.cobalion,
+        slot1Moves : [move.ironTail.id, move.hammerArm.id, move.superpower.id, move.closeCombat.id],
+    },
+    reward : [pkmn.cobalion],
+    category: 3,
+}
+
+areas.masterTerrakion = {
+    rotation: 5,
+    type: `event`,
+    name: `Terrakion Sanctum`,
+    background : `cave`,
+    icon: pkmn.terrakion,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.terrakion,
+        slot1Moves : [move.wrathOfTheLand.id, move.hammerArm.id, move.superpower.id, move.closeCombat.id],
+    },
+    reward : [pkmn.terrakion],
+    category: 3,
+}
+
+areas.masterVirizion = {
+    rotation: 5,
+    type: `event`,
+    name: `Virizion Sanctum`,
+    background : `forest`,
+    icon: pkmn.virizion,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.virizion,
+        slot1Moves : [move.leafStorm.id, move.hammerArm.id, move.superpower.id, move.solarBlade.id],
+    },
+    reward : [pkmn.virizion],
+    category: 3,
+}
+
+areas.masterTornadus = {
+    rotation: 5,
+    type: `event`,
+    name: `Tornadus Sanctum`,
+    background : `mountain`,
+    icon: pkmn.tornadus,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.tornadus,
+        slot1Moves : [move.hurricane.id, move.fly.id, move.drillPeck.id, move.airShlash.id],
+    },
+    reward : [pkmn.tornadus],
+    category: 3,
+}
+
+areas.masterThundurus = {
+    rotation: 5,
+    type: `event`,
+    name: `Thundurus Sanctum`,
+    background : `lab`,
+    icon: pkmn.thundurus,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.thundurus,
+        slot1Moves : [move.supercellSlam.id, move.hurricane.id, move.wildCharge.id, move.thunder.id],
+    },
+    reward : [pkmn.thundurus],
+    category: 3,
+}
+
+areas.masterLandorus = {
+    rotation: 5,
+    type: `event`,
+    name: `Landorus Sanctum`,
+    background : `desert`,
+    icon: pkmn.landorus,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.landorus,
+        slot1Moves : [move.sandsearStorm.id, move.stompingTantrum.id, move.hurricane.id, move.earthquake.id],
+    },
+    reward : [pkmn.landorus],
+    category: 3,
+}
+
+areas.masterEnamorus = {
+    rotation: 5,
+    type: `event`,
+    name: `Enamorus Sanctum`,
+    background : `lake`,
+    icon: pkmn.enamorus,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.enamorus,
+        slot1Moves : [move.magicalTorque.id, move.hurricane.id, move.moonblast.id, move.fly.id],
+    },
+    reward : [pkmn.enamorus],
+    category: 3,
+}
+
+areas.masterReshiram = {
+    rotation: 5,
+    type: `event`,
+    name: `Reshiram Sanctum`,
+    background : `mountain`,
+    icon: pkmn.reshiram,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>2 },
+    level : 110,
+    team : {
+        slot1 : pkmn.reshiram,
+        slot1Moves : [move.blueFlare.id, move.outrage.id, move.overheat.id, move.dracoMeteor.id],
+    },
+    reward : [pkmn.reshiram],
+    category: 3,
+}
+
+areas.masterZekrom = {
+    rotation: 5,
+    type: `event`,
+    name: `Zekrom Sanctum`,
+    background : `mountain`,
+    icon: pkmn.zekrom,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>2 },
+    level : 110,
+    team : {
+        slot1 : pkmn.zekrom,
+        slot1Moves : [move.boltStrike.id, move.outrage.id, move.supercellSlam.id, move.dracoMeteor.id],
+    },
+    reward : [pkmn.zekrom],
+    category: 3,
+}
+
+areas.masterKyurem = {
+    rotation: 5,
+    type: `event`,
+    name: `Kyurem Sanctum`,
+    background : `mountain`,
+    icon: pkmn.kyurem,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.kyurem,
+        slot1Moves : [move.glaciate.id, move.outrage.id, move.freezyFrost.id, move.dracoMeteor.id],
+    },
+    reward : [pkmn.kyurem],
+    category: 3,
+}
+
+areas.masterKeldeo = {
+    rotation: 5,
+    type: `event`,
+    name: `Keldeo Sanctum`,
+    background : `sea`,
+    icon: pkmn.keldeo,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.keldeo,
+        slot1Moves : [move.waveCrash.id, move.hammerArm.id, move.superpower.id, move.hydroPump.id],
+    },
+    reward : [pkmn.keldeo],
+    category: 3,
+}
+
+areas.masterMeloetta = {
+    rotation: 5,
+    type: `event`,
+    name: `Meloetta Sanctum`,
+    background : `route`,
+    icon: pkmn.meloetta,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.meloetta,
+        slot1Moves : [move.relicSong.id, move.hyperBeam.id, move.psychoBoost.id, move.gigaImpact.id],
+    },
+    reward : [pkmn.meloetta],
+    category: 3,
+}
+
+areas.masterGenesect = {
+    rotation: 5,
+    type: `event`,
+    name: `Genesect Sanctum`,
+    background : `forest`,
+    icon: pkmn.genesect,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.genesect,
+        slot1Moves : [move.savageStinger.id, move.ironTail.id, move.firstImpression.id, move.smartStrike.id],
+    },
+    reward : [pkmn.genesect],
+    category: 3,
+}
+
+areas.masterDeoxys = {
+    rotation: 5,
+    type: `event`,
+    name: `Deoxys Sanctum`,
+    background : `space`,
+    icon: pkmn.deoxys,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.deoxys,
+        slot1Moves : [move.psychoBoost.id, move.futureSight.id, move.extrasensory.id, move.zenHeadbut.id],
+    },
+    reward : [pkmn.deoxys],
+    category: 3,
+}
+
+areas.masterDialga = {
+    rotation: 6,
+    type: `event`,
+    name: `Dialga Sanctum`,
+    background : `lab`,
+    icon: pkmn.dialga,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>2 },
+    level : 110,
+    team : {
+        slot1 : pkmn.dialga,
+        slot1Moves : [move.roarOfTime.id, move.ironTail.id, move.outrage.id, move.dracoMeteor.id],
+    },
+    reward : [pkmn.dialga],
+    category: 3,
+}
+
+areas.masterGiratina = {
+    rotation: 6,
+    type: `event`,
+    name: `Giratina Sanctum`,
+    background : `night`,
+    icon: pkmn.giratina,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>2 },
+    level : 110,
+    team : {
+        slot1 : pkmn.giratina,
+        slot1Moves : [move.shadowForce.id, move.phantomForce.id, move.outrage.id, move.dracoMeteor.id],
+    },
+    reward : [pkmn.giratina],
+    category: 3,
+}
+
+areas.masterManaphy = {
+    rotation: 6,
+    type: `event`,
+    name: `Manaphy Sanctum`,
+    background : `sea`,
+    icon: pkmn.manaphy,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.manaphy,
+        slot1Moves : [move.waveCrash.id, move.hydroPump.id, move.muddyWater.id, move.aquaTail.id],
+    },
+    reward : [pkmn.manaphy],
+    category: 3,
+}
+
+areas.masterDarkrai = {
+    rotation: 6,
+    type: `event`,
+    name: `Darkrai Sanctum`,
+    background : `night`,
+    icon: pkmn.darkrai,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.darkrai,
+        slot1Moves : [move.brutalSwing.id, move.nightDaze.id, move.nightSlash.id, move.darkPulse.id],
+    },
+    reward : [pkmn.darkrai],
+    category: 3,
+}
+
+areas.masterShaymin = {
+    rotation: 6,
+    type: `event`,
+    name: `Shaymin Sanctum`,
+    background : `forest`,
+    icon: pkmn.shaymin,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.shaymin,
+        slot1Moves : [move.leafStorm.id, move.solarBlade.id, move.solarBeam.id, move.energyBall.id],
+    },
+    reward : [pkmn.shaymin],
+    category: 3,
+}
+
+areas.masterZacian = {
+    rotation: 6,
+    type: `event`,
+    name: `Zacian Sanctum`,
+    background : `lake`,
+    icon: pkmn.zacian,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>2 },
+    level : 110,
+    team : {
+        slot1 : pkmn.zacian,
+        slot1Moves : [move.magicalTorque.id, move.moonblast.id, move.playRough.id, move.dazzlingGleam.id],
+    },
+    reward : [pkmn.zacian],
+    category: 3,
+}
+
+areas.masterZamazenta = {
+    rotation: 6,
+    type: `event`,
+    name: `Zamazenta Sanctum`,
+    background : `gym`,
+    icon: pkmn.zamazenta,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>2 },
+    level : 110,
+    team : {
+        slot1 : pkmn.zamazenta,
+        slot1Moves : [move.hammerArm.id, move.superpower.id, move.closeCombat.id, move.focusBlast.id],
+    },
+    reward : [pkmn.zamazenta],
+    category: 3,
+}
+
+areas.masterEternatus = {
+    rotation: 6,
+    type: `event`,
+    name: `Eternatus Sanctum`,
+    background : `plant`,
+    icon: pkmn.eternatus,
+    trainer: true,
+    encounter: true,
+    difficulty: tier3difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=2},
+    unlockDescription : `Requires x2 <img src="img/items/mythicRelic.png"> Mythic Relics to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>1 },
+    level : 110,
+    team : {
+        slot1 : pkmn.eternatus,
+        slot1Moves : [move.noxiousTorque.id, move.outrage.id, move.dracoMeteor.id, move.sludgeWave.id],
+    },
+    reward : [pkmn.eternatus],
+    category: 3,
+}
+
+areas.masterZarude = {
+    rotation: 6,
+    type: `event`,
+    name: `Zarude Sanctum`,
+    background : `night`,
+    icon: pkmn.zarude,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.zarude,
+        slot1Moves : [move.brutalSwing.id, move.leafStorm.id, move.solarBlade.id, move.solarBeam.id],
+    },
+    reward : [pkmn.zarude],
+    category: 3,
+}
+
+areas.masterGlastrier = {
+    rotation: 6,
+    type: `event`,
+    name: `Glastrier Sanctum`,
+    background : `iceCave`,
+    icon: pkmn.glastrier,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.glastrier,
+        slot1Moves : [move.freezyFrost.id, move.blizzard.id, move.iceBeam.id, move.icicleCrash.id],
+    },
+    reward : [pkmn.glastrier],
+    category: 3,
+}
+
+areas.masterSpectrier = {
+    rotation: 6,
+    type: `event`,
+    name: `Spectrier Sanctum`,
+    background : `night`,
+    icon: pkmn.spectrier,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.spectrier,
+        slot1Moves : [move.phantomForce.id, move.shadowBall.id, move.shadowPunch.id, move.hex.id],
+    },
+    reward : [pkmn.spectrier],
+    category: 3,
+}
+
+areas.masterCalyrex = {
+    rotation: 6,
+    type: `event`,
+    name: `Calyrex Sanctum`,
+    background : `space`,
+    icon: pkmn.calyrex,
+    trainer: true,
+    encounter: true,
+    difficulty: tier2difficulty,
+    encounterEffect : function() {item.mythicRelic.got-=1},
+    unlockDescription : `Requires a <img src="img/items/mythicRelic.png"> Mythic Relic to enter`,
+    unlockRequirement : function() { return item.mythicRelic.got>0 },
+    level : 110,
+    team : {
+        slot1 : pkmn.calyrex,
+        slot1Moves : [move.psychoBoost.id, move.leafStorm.id, move.solarBlade.id, move.solarBeam.id],
+    },
+    reward : [pkmn.calyrex],
+    category: 3,
+}
+
+//fork content v5.6 - sanctums also reward form-changing items
+const masterFormItems = {
+    masterGroudon: [item.redOrb],
+    masterKyogre: [item.blueOrb],
+    masterGiratina: [item.griseousCore],
+    masterDialga: [item.adamantCrystal],
+    masterLandorus: [item.revealGlass],
+    masterKyurem: [item.dnaSplicer],
+    masterHoopa: [item.prisonBottle],
+    masterShaymin: [item.gracidea],
+    masterDeoxys: [item.meteorite],
+    masterZygarde50: [item.zygardeCube],
+    masterNecrozma: [item.nSolarizer, item.nLunarizer, item.ultranecroziumZ],
+    masterCalyrex: [item.reinsOfUnity],
+    masterZacian: [item.rustedSword],
+    masterZamazenta: [item.rustedShield],
+    masterKeldeo: [item.secretSword],
+    masterMeloetta: [item.relicScore],
+    masterMagearna: [item.soulHeartCog],
+    masterZarude: [item.dadaBandana],
+    masterOgerponTeal: [item.wellspringMask, item.hearthflameMask, item.cornerstoneMask],
+    masterTerapagos: [item.stellarTeraShard],
+}
+for (const i in masterFormItems) areas[i].reward.push(...masterFormItems[i])
+areas.mythicRuins.drops.rare = [item.lustrousGlobe]
+
+
+
+
 
 
 
@@ -6339,6 +8251,36 @@ season.halloween = {
     name: `Hallowed Gala`,
 }
 
+season.frostlight = {
+    background: `snow`,
+    icon: pkmn.delibird,
+    hue: 190,
+    svg: `<svg class="frontier-flair" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M12 2v20M3.34 7l17.32 10M3.34 17L20.66 7M9.5 3.5L12 6l2.5-2.5m-5 17L12 18l2.5 2.5"/></svg>`,
+    start: { month: 12, day: 18 },
+    end: { month: 1, day: 3 },
+    name: `Frostlight Festival`,
+}
+
+season.blossom = {
+    background: `forest`,
+    icon: pkmn.comfey,
+    hue: 300,
+    svg: `<svg class="frontier-flair" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="2.5"/><path d="M12 9.5C10 6 10.5 3 12 2c1.5 1 2 4 0 7.5m2.4 1.7c3.9-1 6.6.3 7.1 2.1c-.8 1.6-3.7 2.6-7.1 1.1M13.5 14.5c1.4 3.8.6 6.7-1.2 7.5c-1.7-.7-2.6-3.6-.3-7.5m-1.6-.4c-3.9 1-6.6-.3-7.1-2.1c.8-1.6 3.7-2.6 7.1-1.1"/></g></svg>`,
+    start: { month: 4, day: 1 },
+    end: { month: 4, day: 14 },
+    name: `Blossom Fair`,
+}
+
+season.summerTide = {
+    background: `beach`,
+    icon: pkmn.wingull,
+    hue: 40,
+    svg: `<svg class="frontier-flair" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></g></svg>`,
+    start: { month: 7, day: 15 },
+    end: { month: 7, day: 28 },
+    name: `Summer Tide Festival`,
+}
+
 for (const i in season){
     season[i].id = i
 }
@@ -6383,6 +8325,128 @@ areas.seasonMarshadow = {
         slot1Moves : [move.powerupPunch.id,move.shadowPunch.id, move.machPunk.id, move.bulletPunch.id],
     },  
     reward : [pkmn.marshadow],
+}
+
+
+//fork content v5.5 - new seasonal events
+
+areas.frostlightVillage = {
+    season : season.frostlight.id,
+    level : wildAreaLevel1,
+    type: `season`,
+    background : `snow`,
+    icon: pkmn.delibird,
+    spawns: {
+        common : [pkmn.snorunt, pkmn.spheal, pkmn.cubchoo],
+        uncommon : [pkmn.delibird],
+        rare : [pkmn.castformSnowy]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        uncommon : [item.oldGateau],
+    }
+}
+
+areas.seasonCalyrexIce = {
+    season : season.frostlight.id,
+    type: `season`,
+    timed: 60,
+    hpPercentage:100,
+    name: `Frozen Encounter`,
+    background : `snow`,
+    icon: pkmn.calyrexIce,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.oldGateau.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/oldGateau.png"> Old Gateau to enter`,
+    unlockRequirement : function() { return item.oldGateau.got>2 },
+    level : 90,
+    team : {
+        slot1 : pkmn.calyrexIce,
+        slot1Moves : [move.iceHammer.id, move.psychic.id, move.highHorsepower.id, move.closeCombat.id],
+    },  
+    reward : [pkmn.calyrexIce],
+}
+
+
+areas.blossomGarden = {
+    season : season.blossom.id,
+    level : wildAreaLevel1,
+    type: `season`,
+    background : `forest`,
+    icon: pkmn.comfey,
+    spawns: {
+        common : [pkmn.cherubi, pkmn.flabebe, pkmn.hoppip],
+        uncommon : [pkmn.comfey],
+        rare : [pkmn.cherrimSunshine]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        uncommon : [item.oldGateau],
+    }
+}
+
+areas.seasonShayminSky = {
+    season : season.blossom.id,
+    type: `season`,
+    timed: 60,
+    hpPercentage:100,
+    name: `Blooming Encounter`,
+    background : `forest`,
+    icon: pkmn.shayminSky,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.oldGateau.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/oldGateau.png"> Old Gateau to enter`,
+    unlockRequirement : function() { return item.oldGateau.got>2 },
+    level : 90,
+    team : {
+        slot1 : pkmn.shayminSky,
+        slot1Moves : [move.seedFlare.id, move.airShlash.id, move.energyBall.id, move.earthPower.id],
+    },  
+    reward : [pkmn.shayminSky],
+}
+
+
+areas.summerShore = {
+    season : season.summerTide.id,
+    level : wildAreaLevel1,
+    type: `season`,
+    background : `beach`,
+    icon: pkmn.wingull,
+    spawns: {
+        common : [pkmn.wingull, pkmn.corphish, pkmn.finneon],
+        uncommon : [pkmn.lapras],
+        rare : [pkmn.wishiwashiSchool]
+    },
+    drops: {
+        common : [item.mysteryEgg],
+        uncommon : [item.oldGateau],
+    }
+}
+
+areas.seasonKyogrePrimal = {
+    season : season.summerTide.id,
+    type: `season`,
+    timed: 60,
+    hpPercentage:100,
+    name: `Tidal Encounter`,
+    background : `beach`,
+    icon: pkmn.kyogrePrimal,
+    trainer: true,
+    encounter: true,
+    difficulty: tier4difficulty,
+    encounterEffect : function() {item.oldGateau.got-=3},
+    unlockDescription : `Requires x3 <img src="img/items/oldGateau.png"> Old Gateau to enter`,
+    unlockRequirement : function() { return item.oldGateau.got>2 },
+    level : 90,
+    team : {
+        slot1 : pkmn.kyogrePrimal,
+        slot1Moves : [move.rainDance.id, move.hydroPump.id, move.thunder.id, move.iceBeam.id],
+    },  
+    reward : [pkmn.kyogrePrimal],
 }
 
 

@@ -223,7 +223,7 @@ function updateGameVersion() {
     saved.tagSystemTags = [];
   }
 
-  saved.version = 5.0
+  saved.version = 5.6
   document.getElementById(`game-version`).innerHTML = `v${saved.version}`
 }
 
@@ -251,7 +251,7 @@ function changeTheme(){
 
   let theme = saved.theme
   if (saved.theme == "default" && saved.currentSeason == season.halloween.id) theme = `spooky`
-  if (saved.theme == "default" && saved.currentSeason == undefined) theme = `dark`
+  if (saved.theme == "default" && saved.currentSeason != season.halloween.id) theme = `dark`
 
 
   document.querySelectorAll('.season-background').forEach(el => {

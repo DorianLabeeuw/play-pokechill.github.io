@@ -81,7 +81,7 @@ l'heure UTC. Les constantes `rotationWildMax`, `rotationDungeonMax`,
 
 - **VS** : les dresseurs `type: "vs"` forment une échelle. Seul le premier non
   battu, **dans l'ordre de déclaration du fichier**, est jouable. Le dernier
-  actuel est `vsPokemonProfessorOak` (niveau 150). Ajouter un dresseur après lui
+  actuel est `vsShadowTrainerFinal` (Ligue des Légendes, ajoutée en v5.2). Ajouter un dresseur après lui
   crée automatiquement un nouveau palier.
 - **Déblocages** : les zones `wild` de niveau 30, 50 et 70 se débloquent avec
   Brock, Misty et Phoebe (boucle en fin de `areasDictionary.js`). Ailleurs, on
@@ -245,7 +245,7 @@ sauvegarde.
 
 ### Un dresseur VS (nouveau palier de progression)
 
-Ajouter un `areas.vsXxx` **après** `vsPokemonProfessorOak` :
+Ajouter un `areas.vsXxx` **après** le dernier dresseur VS (`vsShadowTrainerFinal` en v5.2) :
 
 ```js
 areas.vsMonDresseur = {
@@ -317,14 +317,65 @@ profil de navigateur séparé pour tester sans risque.
   du site. Une partie jouée sur le site d'origine n'apparaît pas
   automatiquement sur le fork (par exemple sur GitHub Pages) : il faut
   l'exporter puis l'importer (Settings, « Export Data » ou « Data to Text »).
-- **Vérification de mise à jour.** `PR/updateCheck.js` interroge le dépôt
-  d'origine `play-pokechill/play-pokechill.github.io`, et non le fork. Comme
-  l'upstream n'évolue plus, le bandeau « nouvelle version » ne s'affichera pas
-  pour les nouveautés du fork. À rediriger vers le fork si besoin.
+- **Vérification de mise à jour.** `PR/updateCheck.js` interroge la branche
+  `main` du fork (`DorianLabeeuw/play-pokechill.github.io`) toutes les
+  5 minutes. Quand un nouveau commit y arrive, le bandeau vert « A new update
+  is available » s'affiche. Un clic sauvegarde puis recharge la page.
+  GitHub Pages met environ une minute à publier, donc un clic trop rapide peut
+  recharger l'ancienne version : il suffit de recharger à nouveau.
+- **Chemins relatifs.** Le site est servi dans un sous-dossier
+  (`/play-pokechill.github.io/`). Il ne faut jamais écrire de chemin qui
+  commence par `/` (`/img/...`) : il faut utiliser `img/...`.
 - **Sprites manquants.** 30 identifiants n'ont pas de sprite normal et 64
   n'ont pas de sprite shiny (formes d'Arceus et de Genesect, quelques mégas
   récentes, Palafin Héros…). Certains sont gérés par du code spécial
   (`arceusCheck()`). À vérifier avant de rendre ces formes obtenables.
-- **Version.** Le jeu affiche `v5.0`. Pour le contenu du fork, il est proposé
-  de continuer en 5.1, 5.2, etc., en ajoutant un bloc de migration seulement
-  quand c'est nécessaire.
+- **Version.** Le fork démarre en `v5.1` (affichée en bas du menu). Chaque lot
+  de contenu monte la version (5.2, 5.3…) en ajoutant un bloc de migration
+  seulement quand c'est nécessaire. C'est aussi le moyen le plus simple de
+  vérifier qu'un déploiement est en ligne.
+
+---
+
+## 8. Déployer le fork (GitHub Pages)
+
+Le jeu est statique : GitHub Pages le sert tel quel, sans build.
+
+**Activation (une seule fois)**
+1. Sur GitHub, ouvrir le dépôt, puis **Settings → Pages**.
+2. Dans *Build and deployment*, choisir **Source : Deploy from a branch**.
+3. Choisir la branche **`main`** et le dossier **`/ (root)`**, puis cliquer sur **Save**.
+4. Après une à deux minutes, le jeu est en ligne à l'adresse
+   **https://dorianlabeeuw.github.io/play-pokechill.github.io/**. L'adresse
+   exacte s'affiche en haut de la page Settings → Pages.
+
+**Ensuite**
+- Chaque merge sur `main` redéploie automatiquement le site, sans rien faire
+  de plus. On peut suivre l'avancement dans l'onglet **Actions**
+  (« pages build and deployment »).
+- Les joueurs déjà sur la page voient le bandeau de mise à jour.
+
+**Récupérer sa sauvegarde la première fois**
+1. Sur l'ancien site : Settings → **Data to Text** → Copy (ou **Export Data**).
+2. Sur le fork : Settings → **Data to Text** → Paste → Load (ou import du fichier).
+
+**Optionnel** : pour une adresse plus courte (`dorianlabeeuw.github.io`), il
+faut renommer le dépôt en `dorianlabeeuw.github.io`. Attention : la sauvegarde
+étant liée au domaine, il faudrait alors refaire l'export puis l'import. Il
+faudrait aussi mettre à jour l'URL dans `PR/updateCheck.js`.
+
+---
+
+## 9. Systèmes ajoutés par le fork
+
+| Version | Ajout | Où |
+|---|---|---|
+| 5.2 | Ligue des Légendes : 8 dresseurs VS après Chen | `areas.vsChampionLeon` … `areas.vsShadowTrainerFinal` |
+| 5.3 | Terres Lointaines : une zone sauvage niveau 90 par rotation, débloquée après Chen | `areas.galarHighlands` … `areas.crimsonMirelands` |
+| 5.4 | Onglet **Master** des événements (catégorie 3), débloqué après la Ligue des Légendes | `areas.mythicRuins`, `areas.master*`, `item.mythicRelic` |
+| 5.5 | Saisons Frostlight (18/12 au 3/01), Blossom (1 au 14/04) et Summer Tide (15 au 28/07) | `season.*`, `areas.frostlightVillage`, `areas.season*` |
+| 5.6 | Objets de forme (`formChange: true`) utilisables depuis le sac, comme les pierres d'évolution | `item.redOrb`…, bloc `pkmn.*.evolve` en fin de `pkmnDictionary.js` |
+
+- Une zone avec `category: 3` apparaît dans l'onglet Master. Une `rotation` sous forme de tableau la rend visible sur plusieurs rotations.
+- Un objet de forme ajoute une entrée `evolve` avec `item`. Le Pokémon doit être niveau 30 ou plus, et l'objet est consommé. Ces objets ne donnent pas le bonus de l'Évoluroc (Eviolite).
+- Les icônes des nouveaux objets sont des recolorations d'icônes existantes.
