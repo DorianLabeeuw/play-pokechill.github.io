@@ -3781,7 +3781,7 @@ function exploreCombatWild() {
         if (team[exploreActiveMember].item == item.babiriBerry.id && move[nextMoveWild].type == 'steel' && superEffective) {totalPower /= (item.babiriBerry.power() /100) +1}
         if (team[exploreActiveMember].item == item.roseliBerry.id && move[nextMoveWild].type == 'fairy' && superEffective) {totalPower /= (item.roseliBerry.power() /100) +1}
 
-        if (team[exploreActiveMember].item == item.eviolite.id && pkmn[team[exploreActiveMember].pkmn.id].evolve !== undefined && ( pkmn[team[exploreActiveMember].pkmn.id].evolve()[1].pkmn.id.slice(0, 4) !== "mega" || team[exploreActiveMember].pkmn.id == pkmn.bayleef.id) ) 
+        if (team[exploreActiveMember].item == item.eviolite.id && pkmn[team[exploreActiveMember].pkmn.id].evolve !== undefined && !pkmn[team[exploreActiveMember].pkmn.id].evolve()[1].item?.formChange && ( pkmn[team[exploreActiveMember].pkmn.id].evolve()[1].pkmn.id.slice(0, 4) !== "mega" || team[exploreActiveMember].pkmn.id == pkmn.bayleef.id) ) 
         {totalPower /= item.eviolite.power();}
 
         if (team[exploreActiveMember].item == item.assaultVest.id) totalPower /= item.assaultVest.power();

@@ -7071,6 +7071,33 @@ areas.masterCalyrex = {
     category: 3,
 }
 
+//fork content v5.6 - sanctums also reward form-changing items
+const masterFormItems = {
+    masterGroudon: [item.redOrb],
+    masterKyogre: [item.blueOrb],
+    masterGiratina: [item.griseousCore],
+    masterDialga: [item.adamantCrystal],
+    masterLandorus: [item.revealGlass],
+    masterKyurem: [item.dnaSplicer],
+    masterHoopa: [item.prisonBottle],
+    masterShaymin: [item.gracidea],
+    masterDeoxys: [item.meteorite],
+    masterZygarde50: [item.zygardeCube],
+    masterNecrozma: [item.nSolarizer, item.nLunarizer, item.ultranecroziumZ],
+    masterCalyrex: [item.reinsOfUnity],
+    masterZacian: [item.rustedSword],
+    masterZamazenta: [item.rustedShield],
+    masterKeldeo: [item.secretSword],
+    masterMeloetta: [item.relicScore],
+    masterMagearna: [item.soulHeartCog],
+    masterZarude: [item.dadaBandana],
+    masterOgerponTeal: [item.wellspringMask, item.hearthflameMask, item.cornerstoneMask],
+    masterTerapagos: [item.stellarTeraShard],
+}
+for (const i in masterFormItems) areas[i].reward.push(...masterFormItems[i])
+areas.mythicRuins.drops.rare = [item.lustrousGlobe]
+
+
 
 
 

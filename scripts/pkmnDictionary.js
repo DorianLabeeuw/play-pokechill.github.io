@@ -20184,6 +20184,33 @@ pkmn.crystalOnix = {
 
 
 
+//fork content v5.6 - legendary forms unlocked with items
+pkmn.groudon.evolve = function() { return { 1: { pkmn: pkmn.groudonPrimal, item: item.redOrb } } }
+pkmn.kyogre.evolve = function() { return { 1: { pkmn: pkmn.kyogrePrimal, item: item.blueOrb } } }
+pkmn.giratina.evolve = function() { return { 1: { pkmn: pkmn.giratinaOrigin, item: item.griseousCore } } }
+pkmn.dialga.evolve = function() { return { 1: { pkmn: pkmn.dialgaOrigin, item: item.adamantCrystal } } }
+pkmn.palkia.evolve = function() { return { 1: { pkmn: pkmn.palkiaOrigin, item: item.lustrousGlobe } } }
+pkmn.tornadus.evolve = function() { return { 1: { pkmn: pkmn.tornadusTherian, item: item.revealGlass } } }
+pkmn.thundurus.evolve = function() { return { 1: { pkmn: pkmn.thundurusTherian, item: item.revealGlass } } }
+pkmn.landorus.evolve = function() { return { 1: { pkmn: pkmn.landorusTherian, item: item.revealGlass } } }
+pkmn.enamorus.evolve = function() { return { 1: { pkmn: pkmn.enamorusTherian, item: item.revealGlass } } }
+pkmn.kyurem.evolve = function() { return { 1: { pkmn: pkmn.kyuremBlack, item: item.dnaSplicer }, 2: { pkmn: pkmn.kyuremWhite, item: item.dnaSplicer } } }
+pkmn.hoopa.evolve = function() { return { 1: { pkmn: pkmn.hoopaUnbound, item: item.prisonBottle } } }
+pkmn.shaymin.evolve = function() { return { 1: { pkmn: pkmn.shayminSky, item: item.gracidea } } }
+pkmn.deoxys.evolve = function() { return { 1: { pkmn: pkmn.deoxysAttack, item: item.meteorite }, 2: { pkmn: pkmn.deoxysDefense, item: item.meteorite }, 3: { pkmn: pkmn.deoxysSpeed, item: item.meteorite } } }
+pkmn.zygarde50.evolve = function() { return { 1: { pkmn: pkmn.zygarde10, item: item.zygardeCube }, 2: { pkmn: pkmn.zygarde100, item: item.zygardeCube } } }
+pkmn.necrozma.evolve = function() { return { 1: { pkmn: pkmn.necrozmaDuskMane, item: item.nSolarizer }, 2: { pkmn: pkmn.necrozmaDawnWings, item: item.nLunarizer }, 3: { pkmn: pkmn.ultraNecrozma, item: item.ultranecroziumZ } } }
+pkmn.calyrex.evolve = function() { return { 1: { pkmn: pkmn.calyrexIce, item: item.reinsOfUnity }, 2: { pkmn: pkmn.calyrexShadow, item: item.reinsOfUnity } } }
+pkmn.zacian.evolve = function() { return { 1: { pkmn: pkmn.zacianCrowned, item: item.rustedSword } } }
+pkmn.zamazenta.evolve = function() { return { 1: { pkmn: pkmn.zamazentaCrowned, item: item.rustedShield } } }
+pkmn.keldeo.evolve = function() { return { 1: { pkmn: pkmn.keldeoResolute, item: item.secretSword } } }
+pkmn.meloetta.evolve = function() { return { 1: { pkmn: pkmn.meloettaPirouette, item: item.relicScore } } }
+pkmn.magearna.evolve = function() { return { 1: { pkmn: pkmn.magearnaOriginal, item: item.soulHeartCog } } }
+pkmn.zarude.evolve = function() { return { 1: { pkmn: pkmn.zarudeDada, item: item.dadaBandana } } }
+pkmn.ogerponTeal.evolve = function() { return { 1: { pkmn: pkmn.ogerponWellspring, item: item.wellspringMask }, 2: { pkmn: pkmn.ogerponHearthflame, item: item.hearthflameMask }, 3: { pkmn: pkmn.ogerponCornerstone, item: item.cornerstoneMask } } }
+pkmn.terapagos.evolve = function() { return { 1: { pkmn: pkmn.terapagosTerastal, item: item.stellarTeraShard }, 2: { pkmn: pkmn.terapagosStellar, item: item.stellarTeraShard } } }
+
+
 for (const i in pkmn){
      pkmn[i].id = i
      pkmn[i].exp = 0

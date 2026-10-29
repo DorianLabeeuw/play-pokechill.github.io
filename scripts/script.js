@@ -223,7 +223,7 @@ function updateGameVersion() {
     saved.tagSystemTags = [];
   }
 
-  saved.version = 5.5
+  saved.version = 5.6
   document.getElementById(`game-version`).innerHTML = `v${saved.version}`
 }
 
