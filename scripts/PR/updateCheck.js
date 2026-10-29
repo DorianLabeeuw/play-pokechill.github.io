@@ -12,7 +12,7 @@ let updateInterval = null;
 async function getLatestCommit() {
   try {
     const res = await fetch(
-      "https://api.github.com/repos/play-pokechill/play-pokechill.github.io/commits/main",
+      "https://api.github.com/repos/DorianLabeeuw/play-pokechill.github.io/commits/main",
       { cache: "no-cache" }
     );
 
