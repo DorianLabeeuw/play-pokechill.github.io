@@ -4520,12 +4520,12 @@ function setEventAreas() {
         return
     }
 
-    if (eventCategory==3){
+    if (eventCategory==3 && areas.vsShadowTrainerFinal.defeated!=true){
         eventCategory=1
         document.getElementById("tooltipTop").style.display = `none`
         document.getElementById("tooltipTitle").style.display = `none`
         document.getElementById("tooltipBottom").style.display = `none`
-        document.getElementById("tooltipMid").innerHTML = `Not yet implemented`
+        document.getElementById("tooltipMid").innerHTML = `Clear the Legends League in VS mode to unlock`
         openTooltip()
         return
     }
@@ -4554,7 +4554,7 @@ function setEventAreas() {
 
     document.getElementById("event-selector-1").style = `initial`
     document.getElementById("event-selector-2").style = `initial`
-    //document.getElementById("event-selector-3").style = `initial`
+    document.getElementById("event-selector-3").style = `initial`
     document.getElementById("event-selector-"+eventCategory).style = `background: #91718B; outline: solid 1px #F97DFF; color: white`
 
 

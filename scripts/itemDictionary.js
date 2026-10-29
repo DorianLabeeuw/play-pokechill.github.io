@@ -897,6 +897,11 @@ item.epochFeather = {
     info: function() {return `Can be used to catch event Pokemon. Expires after event finishes`},
 }
 
+item.mythicRelic = {
+    type: "key",
+    info: function() {return `Found in the Mythic Ruins. Used to enter the legendary sanctums of the Master events`},
+}
+
 item.pokeflute = {
     type: "key",
     rotation: 1,
