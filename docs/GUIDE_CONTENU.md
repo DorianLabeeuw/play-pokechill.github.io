@@ -363,3 +363,19 @@ Le jeu est statique : GitHub Pages le sert tel quel, sans build.
 faut renommer le dépôt en `dorianlabeeuw.github.io`. Attention : la sauvegarde
 étant liée au domaine, il faudrait alors refaire l'export puis l'import. Il
 faudrait aussi mettre à jour l'URL dans `PR/updateCheck.js`.
+
+---
+
+## 9. Systèmes ajoutés par le fork
+
+| Version | Ajout | Où |
+|---|---|---|
+| 5.2 | Ligue des Légendes : 8 dresseurs VS après Chen | `areas.vsChampionLeon` … `areas.vsShadowTrainerFinal` |
+| 5.3 | Terres Lointaines : une zone sauvage niveau 90 par rotation, débloquée après Chen | `areas.galarHighlands` … `areas.crimsonMirelands` |
+| 5.4 | Onglet **Master** des événements (catégorie 3), débloqué après la Ligue des Légendes | `areas.mythicRuins`, `areas.master*`, `item.mythicRelic` |
+| 5.5 | Saisons Frostlight (18/12 au 3/01), Blossom (1 au 14/04) et Summer Tide (15 au 28/07) | `season.*`, `areas.frostlightVillage`, `areas.season*` |
+| 5.6 | Objets de forme (`formChange: true`) utilisables depuis le sac, comme les pierres d'évolution | `item.redOrb`…, bloc `pkmn.*.evolve` en fin de `pkmnDictionary.js` |
+
+- Une zone avec `category: 3` apparaît dans l'onglet Master. Une `rotation` sous forme de tableau la rend visible sur plusieurs rotations.
+- Un objet de forme ajoute une entrée `evolve` avec `item`. Le Pokémon doit être niveau 30 ou plus, et l'objet est consommé. Ces objets ne donnent pas le bonus de l'Évoluroc (Eviolite).
+- Les icônes des nouveaux objets sont des recolorations d'icônes existantes.
